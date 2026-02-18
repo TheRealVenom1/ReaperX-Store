@@ -1,4 +1,3 @@
-/* إعدادات الخطوط والخلفية */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
 * {
@@ -9,16 +8,17 @@
 }
 
 body {
-    background-color: #0a0a0a; /* أسود عميق */
-    color: #ffffff;
-    overflow-x: hidden;
+    background-color: #050505;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
 }
 
-/* الهيدر */
+/* القائمة العلوية - Navbar */
 header {
-    background: rgba(15, 15, 15, 0.95);
-    padding: 20px 10%;
-    border-bottom: 2px solid #6a0dad; /* خط بنفسجي */
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px 5%;
+    border-bottom: 1px solid #9d00ff;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -26,116 +26,116 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* متوافق مع الموبايل زي الصورة */
+    gap: 15px;
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    color: #fff;
 }
 
-.logo span {
-    color: #9d00ff; /* لون النيون */
-    text-shadow: 0 0 10px #9d00ff;
-}
+.logo span { color: #9d00ff; text-shadow: 0 0 10px #9d00ff; }
 
 .nav-links {
     list-style: none;
     display: flex;
-}
-
-.nav-links li {
-    margin-right: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: #f1c40f; /* اللون الأصفر اللي كان في الصورة */
+    font-size: 14px;
     transition: 0.3s;
-    font-weight: 500;
 }
 
-.nav-links a:hover {
-    color: #9d00ff;
-}
+.nav-links a:hover { color: #9d00ff; }
 
-/* قسم الترحيب (Hero Section) */
+/* قسم الهيرو */
 .hero {
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: radial-gradient(circle, #1a052e 0%, #0a0a0a 100%);
+    padding: 60px 20px;
+    background: radial-gradient(circle at top, #1a052e 0%, #050505 100%);
 }
 
 .main-logo {
-    width: 180px;
+    width: 150px;
     border-radius: 50%;
-    border: 4px solid #9d00ff;
-    box-shadow: 0 0 30px rgba(157, 0, 255, 0.5);
+    border: 3px solid #9d00ff;
+    box-shadow: 0 0 20px #9d00ff;
     margin-bottom: 20px;
-    transition: transform 0.5s;
 }
 
-.main-logo:hover {
-    transform: rotate(10deg) scale(1.1);
+h1 { font-size: 3rem; letter-spacing: 5px; margin-bottom: 10px; }
+h1 span { color: #9d00ff; }
+
+/* كارت طرق الدفع - مستوحى من الصورة 1 */
+.payment-card {
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid #9d00ff;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(157, 0, 255, 0.2);
 }
 
-.hero h1 {
-    font-size: 50px;
-    margin-bottom: 15px;
-}
+.payment-card h3 { color: #9d00ff; margin-bottom: 20px; }
 
-.highlight {
-    color: #9d00ff;
-    text-shadow: 2px 2px 5px #000;
-}
+.payment-card ul { list-style: none; }
 
-.hero p {
-    font-size: 20px;
-    color: #ccc;
-    margin-bottom: 40px;
-}
-
-/* الأزرار */
-.social-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.btn {
-    padding: 12px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    color: white;
+.payment-card li {
+    background: rgba(157, 0, 255, 0.1);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
     font-weight: bold;
+}
+
+.coming-soon { color: #777; font-size: 0.9rem; margin-top: 15px; }
+
+/* الزرار الكبير المشع */
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #9d00ff, #f1c40f);
+    color: #000;
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 30px 0;
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.5);
     transition: 0.4s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(157, 0, 255, 0.8);
+}
+
+/* السوشيال ميديا */
+.social-grid {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.tiktok { background: #000; border: 1px solid #fff; }
-.youtube { background: #ff0000; }
-.discord { background: #5865F2; }
-
-.btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(157, 0, 255, 0.3);
-    filter: brightness(1.2);
+.social-link {
+    font-size: 24px;
+    color: #fff;
+    transition: 0.3s;
 }
+
+.social-link:hover { transform: translateY(-5px); color: #9d00ff; }
 
 /* الفوتر */
 footer {
-    text-align: center;
-    padding: 40px;
-    background: #050505;
+    padding: 30px;
     border-top: 1px solid #222;
-    color: #666;
+    color: #f1c40f;
 }
