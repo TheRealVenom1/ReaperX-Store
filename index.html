@@ -10,51 +10,55 @@
 <body>
 
     <header>
-        <nav class="navbar">
-            <div class="logo">Reaper<span>X</span></div>
+        <div class="logo-text">Reaper<span>X Store</span></div> <nav>
             <ul class="nav-links">
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">كريديت</a></li>
-                <li><a href="#">سيرفرات</a></li>
-                <li><a href="#">استضافة بوت</a></li>
-                <li><a href="#">أسعار بوتات</a></li>
-                <li><a href="#">أعضاء</a></li>
-                <li><a href="#">عروضنا</a></li>
-                <li><a href="#">حساباتنا</a></li>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#credit">كريديت</a></li>
+                <li><a href="#servers">سيرفرات</a></li>
+                <li><a href="#hosting">استضافة بوت</a></li>
+                <li><a href="#bots">أسعار بوتات</a></li>
+                <li><a href="#members">أعضاء</a></li>
+                <li><a href="#offers">عروضنا</a></li>
+                <li><a href="#accounts">حساباتنا</a></li>
                 <li><a href="#payment">طرق الدفع</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <img src="https://i.ibb.co/YFgrfRbQ/81129628470b.webp" alt="Logo" class="main-logo">
-        <h1>REAPER<span>X</span> STORE</h1>
-        <p>الجيل القادم من الخدمات الرقمية</p>
-        
-        <div id="payment" class="payment-card">
-            <h3><i class="fas fa-wallet"></i> طرق الدفع المتاحة</h3>
-            <ul>
-                <li><i class="fas fa-mobile-alt"></i> إنستا باي</li>
-                <li><i class="fas fa-money-bill-wave"></i> فودافون كاش</li>
-                <li><i class="fas fa-shuttle-van"></i> أورنج كاش</li>
-            </ul>
-            <p class="coming-soon">باقي خدمات الدفع قريباً...</p>
-        </div>
+    <main id="home">
+        <section class="hero">
+            <div class="logo-container">
+                <img src="https://i.ibb.co/YFgrfRbQ/81129628470b.webp" alt="Logo" class="main-logo">
+            </div>
+            <h1 class="main-title">REAPER<span>X</span></h1>
+            <h2 class="sub-title">STORE</h2>
+            <p class="slogan">الجيل القادم من الخدمات الرقمية</p>
 
-        <a href="https://discord.gg/We4SvEeaNr" class="cta-button">
-            يلا مستني إيه؟ خش وكون من عيلتنا
-        </a>
+            <div id="payment" class="section-card payment-card">
+                <h3><i class="fas fa-money-check-alt"></i> طرق الدفع</h3>
+                <div class="payment-methods">
+                    <div class="method"><i class="fas fa-mobile-screen"></i> إنستا باي</div>
+                    <div class="method"><i class="fas fa-phone-alt"></i> فودافون كاش</div>
+                    <div class="method"><i class="fas fa-shuttle-van"></i> أورنج كاش</div>
+                </div>
+                <p class="soon">باقي خدمات الدفع قريباً...</p>
+            </div>
 
-        <div class="social-grid">
-            <a href="https://www.tiktok.com/@vmblstore" class="social-link tk"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.youtube.com/@VMBL_STORE" class="social-link yt"><i class="fab fa-youtube"></i></a>
-            <a href="https://discord.gg/We4SvEeaNr" class="social-link dc"><i class="fab fa-discord"></i></a>
-        </div>
-    </section>
+            <a href="https://discord.gg/We4SvEeaNr" target="_blank" class="main-cta-btn">
+                يلا مستني إيه؟ خش وكون من عيلتنا
+            </a>
+
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@vmblstore" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@VMBL_STORE" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://discord.gg/We4SvEeaNr" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>TheRealVenom. All Rights Reserved 2026©</p>
-        <p style="font-size: 0.8rem; opacity: 0.5;">Listening to Venom</p>
+        <div class="status">Listening to Venom</div>
     </footer>
 
 </body>
