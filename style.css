@@ -1,0 +1,141 @@
+/* إعدادات الخطوط والخلفية */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: #0a0a0a; /* أسود عميق */
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* الهيدر */
+header {
+    background: rgba(15, 15, 15, 0.95);
+    padding: 20px 10%;
+    border-bottom: 2px solid #6a0dad; /* خط بنفسجي */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: #9d00ff; /* لون النيون */
+    text-shadow: 0 0 10px #9d00ff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #9d00ff;
+}
+
+/* قسم الترحيب (Hero Section) */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle, #1a052e 0%, #0a0a0a 100%);
+}
+
+.main-logo {
+    width: 180px;
+    border-radius: 50%;
+    border: 4px solid #9d00ff;
+    box-shadow: 0 0 30px rgba(157, 0, 255, 0.5);
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+}
+
+.main-logo:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #9d00ff;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+/* الأزرار */
+.social-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tiktok { background: #000; border: 1px solid #fff; }
+.youtube { background: #ff0000; }
+.discord { background: #5865F2; }
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(157, 0, 255, 0.3);
+    filter: brightness(1.2);
+}
+
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #050505;
+    border-top: 1px solid #222;
+    color: #666;
+}
